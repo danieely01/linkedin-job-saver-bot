@@ -19,5 +19,15 @@ Egy Python alapú automatizációs bot, amely a Selenium WebDriver segítségév
 A program futtatásához a Selenium csomag telepítése, valamint a megfelelő WebDriver (pl. ChromeDriver) megléte szükséges a rendszer `PATH` változójában.
 
 **1. Függőségek telepítése:**
-```bash
-pip install selenium
+Futtasd az alábbi parancsot a terminálban:
+
+    pip install selenium
+
+**2. Környezeti változók beállítása:**
+A futtatás előtt be kell állítani az operációs rendszerben a hitelesítő adatokat:
+* `MAIL`: A LinkedIn profilhoz tartozó email cím.
+* `PASSWORD`: A LinkedIn jelszó.
+* `PATH`: A letöltött WebDriver (pl. `chromedriver.exe`) elérési útvonala.
+
+**3. Testreszabás:**
+A `__init__` metódusban található `self.URL` változó átírásával bármilyen konkrét LinkedIn keresési URL megadható (szűrve lokációra, kulcsszavakra, stb.).
